@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AppRating1.props" />
+</Project>

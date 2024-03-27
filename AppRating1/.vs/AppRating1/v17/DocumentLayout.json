@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\AppRating1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|e:\\apprating1\\apprating1\\apprating1.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|solutionrelative:apprating1\\apprating1.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|e:\\apprating1\\apprating1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|solutionrelative:apprating1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|e:\\apprating1\\apprating1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|solutionrelative:apprating1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|e:\\apprating1\\apprating1\\controllers\\data\\drivingservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|solutionrelative:apprating1\\controllers\\data\\drivingservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|e:\\apprating1\\apprating1\\controllers\\drivingserviceratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|solutionrelative:apprating1\\controllers\\drivingserviceratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|e:\\apprating1\\apprating1\\controllers\\models\\driverevaluation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|solutionrelative:apprating1\\controllers\\models\\driverevaluation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppRating1.http",
+              "DocumentMoniker": "E:\\AppRating1\\AppRating1\\AppRating1.http",
+              "RelativeDocumentMoniker": "AppRating1\\AppRating1.http",
+              "ToolTip": "E:\\AppRating1\\AppRating1\\AppRating1.http",
+              "RelativeToolTip": "AppRating1\\AppRating1.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-03-27T18:03:34.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\AppRating1\\AppRating1\\appsettings.json",
+              "RelativeDocumentMoniker": "AppRating1\\appsettings.json",
+              "ToolTip": "E:\\AppRating1\\AppRating1\\appsettings.json",
+              "RelativeToolTip": "AppRating1\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-27T18:03:33.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DrivingServiceRepository.cs",
+              "DocumentMoniker": "E:\\AppRating1\\AppRating1\\Controllers\\Data\\DrivingServiceRepository.cs",
+              "RelativeDocumentMoniker": "AppRating1\\Controllers\\Data\\DrivingServiceRepository.cs",
+              "ToolTip": "E:\\AppRating1\\AppRating1\\Controllers\\Data\\DrivingServiceRepository.cs",
+              "RelativeToolTip": "AppRating1\\Controllers\\Data\\DrivingServiceRepository.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAswDwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T12:47:07.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DrivingServiceRatingController.cs",
+              "DocumentMoniker": "E:\\AppRating1\\AppRating1\\Controllers\\DrivingServiceRatingController.cs",
+              "RelativeDocumentMoniker": "AppRating1\\Controllers\\DrivingServiceRatingController.cs",
+              "ToolTip": "E:\\AppRating1\\AppRating1\\Controllers\\DrivingServiceRatingController.cs",
+              "RelativeToolTip": "AppRating1\\Controllers\\DrivingServiceRatingController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T12:45:56.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DriverEvaluation.cs",
+              "DocumentMoniker": "E:\\AppRating1\\AppRating1\\Controllers\\Models\\DriverEvaluation.cs",
+              "RelativeDocumentMoniker": "AppRating1\\Controllers\\Models\\DriverEvaluation.cs",
+              "ToolTip": "E:\\AppRating1\\AppRating1\\Controllers\\Models\\DriverEvaluation.cs",
+              "RelativeToolTip": "AppRating1\\Controllers\\Models\\DriverEvaluation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T12:44:56.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\AppRating1\\AppRating1\\Program.cs",
+              "RelativeDocumentMoniker": "AppRating1\\Program.cs",
+              "ToolTip": "E:\\AppRating1\\AppRating1\\Program.cs",
+              "RelativeToolTip": "AppRating1\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T12:44:24.173Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
