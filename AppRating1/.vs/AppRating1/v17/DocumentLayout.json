@@ -1,30 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\AppRating1\\",
+  "WorkspaceRootPath": "C:\\Users\\ACER\\source\\repos\\hoangdzpc\\Project2\\AppRating1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|e:\\apprating1\\apprating1\\apprating1.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|solutionrelative:apprating1\\apprating1.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ACER\\AppData\\Local\\Temp\\.vsdbgsrc\\1fb43514d081377f2056b75d6537c5541ac3c6ef5064af040a77a1ab15bf391b\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|e:\\apprating1\\apprating1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|solutionrelative:apprating1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|c:\\users\\acer\\source\\repos\\hoangdzpc\\project2\\apprating1\\apprating1\\controllers\\suggestcommentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|solutionrelative:apprating1\\controllers\\suggestcommentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|e:\\apprating1\\apprating1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|solutionrelative:apprating1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|e:\\apprating1\\apprating1\\controllers\\data\\drivingservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|solutionrelative:apprating1\\controllers\\data\\drivingservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|e:\\apprating1\\apprating1\\controllers\\drivingserviceratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|solutionrelative:apprating1\\controllers\\drivingserviceratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|e:\\apprating1\\apprating1\\controllers\\models\\driverevaluation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|solutionrelative:apprating1\\controllers\\models\\driverevaluation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|c:\\users\\acer\\source\\repos\\hoangdzpc\\project2\\apprating1\\apprating1\\controllers\\models\\suggestcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|solutionrelative:apprating1\\controllers\\models\\suggestcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,79 +26,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AppRating1.http",
-              "DocumentMoniker": "E:\\AppRating1\\AppRating1\\AppRating1.http",
-              "RelativeDocumentMoniker": "AppRating1\\AppRating1.http",
-              "ToolTip": "E:\\AppRating1\\AppRating1\\AppRating1.http",
-              "RelativeToolTip": "AppRating1\\AppRating1.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-03-27T18:03:34.88Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\AppRating1\\AppRating1\\appsettings.json",
-              "RelativeDocumentMoniker": "AppRating1\\appsettings.json",
-              "ToolTip": "E:\\AppRating1\\AppRating1\\appsettings.json",
-              "RelativeToolTip": "AppRating1\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-27T18:03:33.997Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DrivingServiceRepository.cs",
-              "DocumentMoniker": "E:\\AppRating1\\AppRating1\\Controllers\\Data\\DrivingServiceRepository.cs",
-              "RelativeDocumentMoniker": "AppRating1\\Controllers\\Data\\DrivingServiceRepository.cs",
-              "ToolTip": "E:\\AppRating1\\AppRating1\\Controllers\\Data\\DrivingServiceRepository.cs",
-              "RelativeToolTip": "AppRating1\\Controllers\\Data\\DrivingServiceRepository.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAswDwAAAAJAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\AppData\\Local\\Temp\\.vsdbgsrc\\1fb43514d081377f2056b75d6537c5541ac3c6ef5064af040a77a1ab15bf391b\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\1fb43514d081377f2056b75d6537c5541ac3c6ef5064af040a77a1ab15bf391b\\Program.cs",
+              "ToolTip": "C:\\Users\\ACER\\AppData\\Local\\Temp\\.vsdbgsrc\\1fb43514d081377f2056b75d6537c5541ac3c6ef5064af040a77a1ab15bf391b\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\1fb43514d081377f2056b75d6537c5541ac3c6ef5064af040a77a1ab15bf391b\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T12:47:07.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DrivingServiceRatingController.cs",
-              "DocumentMoniker": "E:\\AppRating1\\AppRating1\\Controllers\\DrivingServiceRatingController.cs",
-              "RelativeDocumentMoniker": "AppRating1\\Controllers\\DrivingServiceRatingController.cs",
-              "ToolTip": "E:\\AppRating1\\AppRating1\\Controllers\\DrivingServiceRatingController.cs",
-              "RelativeToolTip": "AppRating1\\Controllers\\DrivingServiceRatingController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T12:45:56.591Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DriverEvaluation.cs",
-              "DocumentMoniker": "E:\\AppRating1\\AppRating1\\Controllers\\Models\\DriverEvaluation.cs",
-              "RelativeDocumentMoniker": "AppRating1\\Controllers\\Models\\DriverEvaluation.cs",
-              "ToolTip": "E:\\AppRating1\\AppRating1\\Controllers\\Models\\DriverEvaluation.cs",
-              "RelativeToolTip": "AppRating1\\Controllers\\Models\\DriverEvaluation.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T12:44:56.632Z",
+              "WhenOpened": "2024-03-28T09:12:25.85Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\AppRating1\\AppRating1\\Program.cs",
-              "RelativeDocumentMoniker": "AppRating1\\Program.cs",
-              "ToolTip": "E:\\AppRating1\\AppRating1\\Program.cs",
-              "RelativeToolTip": "AppRating1\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Title": "SuggestComment.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Source\\Repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\Controllers\\Models\\SuggestComment.cs",
+              "RelativeDocumentMoniker": "AppRating1\\Controllers\\Models\\SuggestComment.cs",
+              "ToolTip": "C:\\Users\\ACER\\Source\\Repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\Controllers\\Models\\SuggestComment.cs",
+              "RelativeToolTip": "AppRating1\\Controllers\\Models\\SuggestComment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T12:44:24.173Z",
+              "WhenOpened": "2024-04-03T09:23:46.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SuggestCommentController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Source\\Repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\Controllers\\SuggestCommentController.cs",
+              "RelativeDocumentMoniker": "AppRating1\\Controllers\\SuggestCommentController.cs",
+              "ToolTip": "C:\\Users\\ACER\\Source\\Repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\Controllers\\SuggestCommentController.cs",
+              "RelativeToolTip": "AppRating1\\Controllers\\SuggestCommentController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T09:23:11.637Z",
               "EditorCaption": ""
             }
           ]

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\AppRating1\\AppRating1\\AppRating1.csproj": {}
+    "C:\\Users\\ACER\\Source\\Repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\AppRating1.csproj": {}
   },
   "projects": {
-    "E:\\AppRating1\\AppRating1\\AppRating1.csproj": {
+    "C:\\Users\\ACER\\Source\\Repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\AppRating1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\AppRating1\\AppRating1\\AppRating1.csproj",
+        "projectUniqueName": "C:\\Users\\ACER\\Source\\Repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\AppRating1.csproj",
         "projectName": "AppRating1",
-        "projectPath": "E:\\AppRating1\\AppRating1\\AppRating1.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "E:\\AppRating1\\AppRating1\\obj\\",
+        "projectPath": "C:\\Users\\ACER\\Source\\Repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\AppRating1.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ACER\\Source\\Repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,6 +49,16 @@
               "target": "Package",
               "version": "[8.0.3, )"
             },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -73,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
