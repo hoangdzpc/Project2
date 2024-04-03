@@ -61,7 +61,7 @@ public class RatingController : ControllerBase
 
     // DELETE: api/rating/{id}
     [HttpDelete("{id}")]
-    public IActionResult DeleteRating(int id)
+    public IActionResult DeleteRating(Guid id)
     {
         var ratingToDelete = _ratings.FirstOrDefault(r => r.Id == id);
         if (ratingToDelete == null)
