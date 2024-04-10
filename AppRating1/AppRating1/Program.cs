@@ -1,6 +1,10 @@
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using AppRating1.Data;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<AppRating1Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AppRating1Context") ?? throw new InvalidOperationException("Connection string 'AppRating1Context' not found.")));
 
 // Add services to the container.
 
@@ -15,7 +19,7 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();

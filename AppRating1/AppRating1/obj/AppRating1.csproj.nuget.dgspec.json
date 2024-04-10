@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ACER\\Source\\Repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\AppRating1.csproj": {}
+    "C:\\Users\\ACER\\source\\repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\AppRating1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ACER\\Source\\Repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\AppRating1.csproj": {
+    "C:\\Users\\ACER\\source\\repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\AppRating1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ACER\\Source\\Repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\AppRating1.csproj",
+        "projectUniqueName": "C:\\Users\\ACER\\source\\repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\AppRating1.csproj",
         "projectName": "AppRating1",
-        "projectPath": "C:\\Users\\ACER\\Source\\Repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\AppRating1.csproj",
+        "projectPath": "C:\\Users\\ACER\\source\\repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\AppRating1.csproj",
         "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ACER\\Source\\Repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\obj\\",
+        "outputPath": "C:\\Users\\ACER\\source\\repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -47,11 +47,11 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -59,9 +59,29 @@
               "target": "Package",
               "version": "[8.0.3, )"
             },
+            "Microsoft.Extensions.DependencyModel": {
+              "target": "Package",
+              "version": "[9.0.0-preview.2.24128.5, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
