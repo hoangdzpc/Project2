@@ -1,9 +1,9 @@
-﻿namespace AppRating1.Controllers.Models
+﻿namespace AppRating1.Models
 {
     public class SuggestComment
     {
-        public Guid Id { get; set; }
-        public Guid RatedEntityId { get; set; } // Khóa ngoại đến bảng RatedEntity
+        public int Id { get; set; }
+        public int RatedEntityId { get; set; } // Khóa ngoại đến bảng RatedEntity
         public string Comment { get; set; }
     }
 }

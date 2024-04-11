@@ -13,6 +13,7 @@
           "Microsoft.EntityFrameworkCore.Tools": "8.0.3",
           "Microsoft.Extensions.DependencyModel": "9.0.0-preview.2.24128.5",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.2",
+          "NuGetEnablePackageRestore": "2.0.0",
           "Swashbuckle.AspNetCore": "6.5.0",
           "Swashbuckle.AspNetCore.Swagger": "6.5.0",
           "Swashbuckle.AspNetCore.SwaggerGen": "6.5.0",
@@ -1612,6 +1613,7 @@
           }
         }
       },
+      "NuGetEnablePackageRestore/2.0.0": {},
       "Swashbuckle.AspNetCore/6.5.0": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
@@ -2801,6 +2803,13 @@
       "sha512": "sha512-ypnSvEtpNGo48bAWn95J1oHChycCXcevFSbn53fqzLxlXFSZP7dawu8p/7mHAfGufZQSV2sBpW80XQGIfXO8kQ==",
       "path": "nuget.versioning/6.9.1",
       "hashPath": "nuget.versioning.6.9.1.nupkg.sha512"
+    },
+    "NuGetEnablePackageRestore/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iOl/E2e0xlENY06fv7fOq2PBGX9F0/cGf1Y++7T7iRTR3KAFr2vf/x29qTCEvLVaeF2ulnb+aoCzTTq63nd+8Q==",
+      "path": "nugetenablepackagerestore/2.0.0",
+      "hashPath": "nugetenablepackagerestore.2.0.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.5.0": {
       "type": "package",

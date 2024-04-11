@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ACER\\source\\repos\\hoangdzpc\\Project2\\AppRating1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|c:\\users\\acer\\source\\repos\\hoangdzpc\\project2\\apprating1\\apprating1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|solutionrelative:apprating1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|c:\\users\\acer\\source\\repos\\hoangdzpc\\project2\\apprating1\\apprating1\\data\\apprating1context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|solutionrelative:apprating1\\data\\apprating1context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|c:\\users\\acer\\source\\repos\\hoangdzpc\\project2\\apprating1\\apprating1\\models\\ratedentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|solutionrelative:apprating1\\models\\ratedentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|c:\\users\\acer\\source\\repos\\hoangdzpc\\project2\\apprating1\\apprating1\\controllers\\ratedentitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|solutionrelative:apprating1\\controllers\\ratedentitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|c:\\users\\acer\\source\\repos\\hoangdzpc\\project2\\apprating1\\apprating1\\controllers\\ratingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|solutionrelative:apprating1\\controllers\\ratingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|c:\\users\\acer\\source\\repos\\hoangdzpc\\project2\\apprating1\\apprating1\\models\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|solutionrelative:apprating1\\models\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|c:\\users\\acer\\source\\repos\\hoangdzpc\\project2\\apprating1\\apprating1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFBE93C2-156B-4CA4-B2D6-0333F02C0526}|AppRating1\\AppRating1.csproj|solutionrelative:apprating1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,67 +42,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\Program.cs",
               "RelativeDocumentMoniker": "AppRating1\\Program.cs",
               "ToolTip": "C:\\Users\\ACER\\source\\repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\Program.cs",
               "RelativeToolTip": "AppRating1\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T05:19:32.478Z",
+              "WhenOpened": "2024-04-10T13:19:07.778Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Rating.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\Models\\Rating.cs",
+              "RelativeDocumentMoniker": "AppRating1\\Models\\Rating.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\Models\\Rating.cs",
+              "RelativeToolTip": "AppRating1\\Models\\Rating.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T13:39:00.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "RatedEntity.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\Models\\RatedEntity.cs",
               "RelativeDocumentMoniker": "AppRating1\\Models\\RatedEntity.cs",
               "ToolTip": "C:\\Users\\ACER\\source\\repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\Models\\RatedEntity.cs",
               "RelativeToolTip": "AppRating1\\Models\\RatedEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAoAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T05:17:02.042Z",
+              "WhenOpened": "2024-04-10T13:37:45.476Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AppRating1Context.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\Data\\AppRating1Context.cs",
-              "RelativeDocumentMoniker": "AppRating1\\Data\\AppRating1Context.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\Data\\AppRating1Context.cs",
-              "RelativeToolTip": "AppRating1\\Data\\AppRating1Context.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T05:16:32.826Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RatedEntitiesController.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\Controllers\\RatedEntitiesController.cs",
-              "RelativeDocumentMoniker": "AppRating1\\Controllers\\RatedEntitiesController.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\Controllers\\RatedEntitiesController.cs",
-              "RelativeToolTip": "AppRating1\\Controllers\\RatedEntitiesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T05:16:06.039Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "RatingsController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\Controllers\\RatingsController.cs",
               "RelativeDocumentMoniker": "AppRating1\\Controllers\\RatingsController.cs",
               "ToolTip": "C:\\Users\\ACER\\source\\repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\Controllers\\RatingsController.cs",
               "RelativeToolTip": "AppRating1\\Controllers\\RatingsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAkAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAA9wFgAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T05:16:01.849Z",
+              "WhenOpened": "2024-04-10T13:33:40.329Z",
               "EditorCaption": ""
             }
           ]

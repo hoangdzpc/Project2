@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ar3+91NZBgMBZYzqhjpsJ+lKg1G/xlnmkxe33NNOKBzdpDyuaI7KOaeG+62MsxXwerodLya//+QIpo8H8S3yGQ==",
+  "dgSpecHash": "egc0Mq9uOt4AzrdJwHTDkdZ2TbK4ohu442eyxm8ZBzqorIcdeAa57QUTUlo6w3nSfRf8RXIAh3cXqTseVszTVQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\ACER\\source\\repos\\hoangdzpc\\Project2\\AppRating1\\AppRating1\\AppRating1.csproj",
   "expectedPackageFiles": [
@@ -126,6 +126,7 @@
     "C:\\Users\\ACER\\.nuget\\packages\\nuget.projectmodel\\6.9.1\\nuget.projectmodel.6.9.1.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\nuget.protocol\\6.9.1\\nuget.protocol.6.9.1.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\nuget.versioning\\6.9.1\\nuget.versioning.6.9.1.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\nugetenablepackagerestore\\2.0.0\\nugetenablepackagerestore.2.0.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppRating1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e708b52812402f77114e8d84a52b206fd5d2f11f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d12b3c8c9d868ee5616020a6de82b8d4e403f4e")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppRating1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppRating1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

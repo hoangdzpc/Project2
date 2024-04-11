@@ -1,8 +1,8 @@
-﻿namespace AppRating1.Controllers.Models
+﻿namespace AppRating1.Models
 {
     public class ServiceType
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
     }
 }

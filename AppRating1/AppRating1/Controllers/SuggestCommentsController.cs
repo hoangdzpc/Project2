@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using AppRating1.Controllers.Models;
+using AppRating1.Models;
 using AppRating1.Data;
 
 namespace AppRating1.Controllers
@@ -23,14 +23,14 @@ namespace AppRating1.Controllers
 
         // GET: api/SuggestComments
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<SuggestComment>>> GetSuggestComment()
+        public async Task<ActionResult<IEnumerable<SuggestCommentTable>>> GetSuggestComment()
         {
             return await _context.SuggestComment.ToListAsync();
         }
 
         // GET: api/SuggestComments/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<SuggestComment>> GetSuggestComment(Guid id)
+        public async Task<ActionResult<SuggestCommentTable>> GetSuggestComment(int id)
         {
             var suggestComment = await _context.SuggestComment.FindAsync(id);
 
@@ -45,15 +45,17 @@ namespace AppRating1.Controllers
         // PUT: api/SuggestComments/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutSuggestComment(Guid id, SuggestComment suggestComment)
+        public async Task<IActionResult> PutSuggestComment(int id, SuggestCommentTable suggestComment)
         {
-            if (id != suggestComment.Id)
+            var suggestComment1 = _context.SuggestComment.SingleOrDefault(lo => lo.Id == id);
+            if (suggestComment1 == null)
             {
                 return BadRequest();
             }
-
-            _context.Entry(suggestComment).State = EntityState.Modified;
-
+            else
+            {
+                suggestComment1.Comment = suggestComment.Comment;
+            }
             try
             {
                 await _context.SaveChangesAsync();
@@ -76,9 +78,14 @@ namespace AppRating1.Controllers
         // POST: api/SuggestComments
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<SuggestComment>> PostSuggestComment(SuggestComment suggestComment)
+        public async Task<ActionResult<SuggestCommentTable>> PostSuggestComment(SuggestComment suggestComment)
         {
-            _context.SuggestComment.Add(suggestComment);
+            var suggestComment1 = new SuggestComment()
+            {
+                Comment = suggestComment.Comment,
+                RatedEntityId = suggestComment.RatedEntityId,
+            };
+            _context.Add(suggestComment1);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetSuggestComment", new { id = suggestComment.Id }, suggestComment);
@@ -86,7 +93,7 @@ namespace AppRating1.Controllers
 
         // DELETE: api/SuggestComments/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteSuggestComment(Guid id)
+        public async Task<IActionResult> DeleteSuggestComment(int id)
         {
             var suggestComment = await _context.SuggestComment.FindAsync(id);
             if (suggestComment == null)
@@ -100,7 +107,7 @@ namespace AppRating1.Controllers
             return NoContent();
         }
 
-        private bool SuggestCommentExists(Guid id)
+        private bool SuggestCommentExists(int id)
         {
             return _context.SuggestComment.Any(e => e.Id == id);
         }

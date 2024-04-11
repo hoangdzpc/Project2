@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using AppRating1.Controllers.Models;
 using AppRating1.Data;
+using AppRating1.Models;
 
 namespace AppRating1.Controllers
 {
@@ -23,14 +23,14 @@ namespace AppRating1.Controllers
 
         // GET: api/Ratings
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Rating>>> GetRating()
+        public async Task<ActionResult<IEnumerable<RatingTable>>> GetRating()
         {
             return await _context.Rating.ToListAsync();
         }
 
         // GET: api/Ratings/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Rating>> GetRating(Guid id)
+        public async Task<ActionResult<RatingTable>> GetRating(int id)
         {
             var rating = await _context.Rating.FindAsync(id);
 
@@ -45,14 +45,19 @@ namespace AppRating1.Controllers
         // PUT: api/Ratings/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutRating(Guid id, Rating rating)
+        public async Task<IActionResult> PutRating(int id, Models.Rating rating)
         {
-            if (id != rating.Id)
+            var rating1 = _context.Rating.SingleOrDefault(lo => lo.Id == id);
+            if (rating1 == null)
             {
                 return BadRequest();
             }
-
-            _context.Entry(rating).State = EntityState.Modified;
+            else
+            {
+                rating1.RatingValue = rating.RatingValue;
+                rating1.Comment = rating.Comment;
+            };
+            _context.Entry(rating1).State = EntityState.Modified;
 
             try
             {
@@ -76,17 +81,31 @@ namespace AppRating1.Controllers
         // POST: api/Ratings
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Rating>> PostRating(Rating rating)
+        public IActionResult PostRating(Models.Rating rating)
         {
-            _context.Rating.Add(rating);
-            await _context.SaveChangesAsync();
+            try
+            {
+                var rating1 = new RatingTable
+                {
+                    RatingValue = rating.RatingValue,
+                    RatedEntityId = rating.RatedEntityId,
+                    UserId = rating.UserId,
+                    Comment = rating.Comment,
+                };
+                _context.Add(rating1);
+                _context.SaveChanges();
 
-            return CreatedAtAction("GetRating", new { id = rating.Id }, rating);
+                return Ok(rating1);
+            }
+            catch
+            {
+                return BadRequest();
+            }
         }
 
         // DELETE: api/Ratings/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteRating(Guid id)
+        public async Task<IActionResult> DeleteRating(int id)
         {
             var rating = await _context.Rating.FindAsync(id);
             if (rating == null)
@@ -100,7 +119,7 @@ namespace AppRating1.Controllers
             return NoContent();
         }
 
-        private bool RatingExists(Guid id)
+        private bool RatingExists(int id)
         {
             return _context.Rating.Any(e => e.Id == id);
         }

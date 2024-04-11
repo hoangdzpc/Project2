@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using AppRating1.Controllers.Models;
+using AppRating1.Models;
 using AppRating1.Data;
 
 namespace AppRating1.Controllers
@@ -23,14 +23,14 @@ namespace AppRating1.Controllers
 
         // GET: api/Users
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetUser()
+        public async Task<ActionResult<IEnumerable<UserTable>>> GetUser()
         {
             return await _context.User.ToListAsync();
         }
 
         // GET: api/Users/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<User>> GetUser(Guid id)
+        public async Task<ActionResult<UserTable>> GetUser(int id)
         {
             var user = await _context.User.FindAsync(id);
 
@@ -45,15 +45,17 @@ namespace AppRating1.Controllers
         // PUT: api/Users/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutUser(Guid id, User user)
+        public async Task<IActionResult> PutUser(int id, User user)
         {
+            var user1 = _context.User.Find(id);
             if (id != user.Id)
             {
                 return BadRequest();
             }
-
-            _context.Entry(user).State = EntityState.Modified;
-
+            else
+            {
+                user1.Username = user.Username;
+            }
             try
             {
                 await _context.SaveChangesAsync();
@@ -76,9 +78,13 @@ namespace AppRating1.Controllers
         // POST: api/Users
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<User>> PostUser(User user)
+        public async Task<ActionResult<UserTable>> PostUser(User user)
         {
-            _context.User.Add(user);
+            var user1 = new UserTable
+            {
+                Username = user.Username,
+            };
+            _context.User.Add(user1);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetUser", new { id = user.Id }, user);
@@ -86,7 +92,7 @@ namespace AppRating1.Controllers
 
         // DELETE: api/Users/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUser(Guid id)
+        public async Task<IActionResult> DeleteUser(int id)
         {
             var user = await _context.User.FindAsync(id);
             if (user == null)
@@ -100,7 +106,7 @@ namespace AppRating1.Controllers
             return NoContent();
         }
 
-        private bool UserExists(Guid id)
+        private bool UserExists(int id)
         {
             return _context.User.Any(e => e.Id == id);
         }

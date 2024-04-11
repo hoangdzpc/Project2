@@ -3,7 +3,8 @@
     "",
     "\\AppRating1",
     "\\AppRating1\\Controllers",
-    "\\AppRating1\\Data"
+    "\\AppRating1\\Data",
+    "\\AppRating1\\Models"
   ],
   "SelectedNode": "\\AppRating1.sln",
   "PreviewInSolutionExplorer": false

@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using AppRating1.Controllers.Models;
 using AppRating1.Data;
+using AppRating1.Models;
 
 namespace AppRating1.Controllers
 {
@@ -23,14 +18,14 @@ namespace AppRating1.Controllers
 
         // GET: api/ServiceTypes
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ServiceType>>> GetServiceType()
+        public async Task<ActionResult<IEnumerable<ServiceTypeTable>>> GetServiceType()
         {
             return await _context.ServiceType.ToListAsync();
         }
 
         // GET: api/ServiceTypes/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<ServiceType>> GetServiceType(Guid id)
+        public async Task<ActionResult<ServiceTypeTable>> GetServiceType(int id)
         {
             var serviceType = await _context.ServiceType.FindAsync(id);
 
@@ -45,14 +40,17 @@ namespace AppRating1.Controllers
         // PUT: api/ServiceTypes/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutServiceType(Guid id, ServiceType serviceType)
+        public async Task<IActionResult> PutServiceType(int id, Models.ServiceType serviceType)
         {
-            if (id != serviceType.Id)
+            var serviceType1 = _context.ServiceType.SingleOrDefault(x => x.Id == id);
+            if (serviceType1 == null)
             {
                 return BadRequest();
             }
-
-            _context.Entry(serviceType).State = EntityState.Modified;
+            else
+            {
+                serviceType1.Name = serviceType.Name;
+            }
 
             try
             {
@@ -76,9 +74,13 @@ namespace AppRating1.Controllers
         // POST: api/ServiceTypes
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<ServiceType>> PostServiceType(ServiceType serviceType)
+        public async Task<ActionResult<ServiceTypeTable>> PostServiceType(Models.ServiceType serviceType)
         {
-            _context.ServiceType.Add(serviceType);
+            var serviceType1 = new ServiceType()
+            {
+                Name = serviceType.Name,
+            };
+            _context.Add(serviceType1);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetServiceType", new { id = serviceType.Id }, serviceType);
@@ -86,7 +88,7 @@ namespace AppRating1.Controllers
 
         // DELETE: api/ServiceTypes/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteServiceType(Guid id)
+        public async Task<IActionResult> DeleteServiceType(int id)
         {
             var serviceType = await _context.ServiceType.FindAsync(id);
             if (serviceType == null)
@@ -100,7 +102,7 @@ namespace AppRating1.Controllers
             return NoContent();
         }
 
-        private bool ServiceTypeExists(Guid id)
+        private bool ServiceTypeExists(int id)
         {
             return _context.ServiceType.Any(e => e.Id == id);
         }

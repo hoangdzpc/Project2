@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using AppRating1.Controllers.Models;
+using AppRating1.Models;
 using AppRating1.Data;
 
 namespace AppRating1.Controllers
@@ -23,14 +23,14 @@ namespace AppRating1.Controllers
 
         // GET: api/RatedEntities
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<RatedEntity>>> GetRatedEntity()
+        public async Task<ActionResult<IEnumerable<RatedEntityTable>>> GetRatedEntity()
         {
             return await _context.RatedEntity.ToListAsync();
         }
 
         // GET: api/RatedEntities/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<RatedEntity>> GetRatedEntity(Guid id)
+        public async Task<ActionResult<RatedEntityTable>> GetRatedEntity(int id)
         {
             var ratedEntity = await _context.RatedEntity.FindAsync(id);
 
@@ -45,15 +45,17 @@ namespace AppRating1.Controllers
         // PUT: api/RatedEntities/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutRatedEntity(Guid id, RatedEntity ratedEntity)
+        public async Task<IActionResult> PutRatedEntity(int id, RatedEntity ratedEntity)
         {
-            if (id != ratedEntity.Id)
+            var ratedEntity1 = _context.RatedEntity.SingleOrDefault(lo => lo.Id==id);
+            if (ratedEntity1 == null)
             {
                 return BadRequest();
             }
-
-            _context.Entry(ratedEntity).State = EntityState.Modified;
-
+            else
+            {
+                _context.Entry(ratedEntity1).State = EntityState.Modified;
+            }
             try
             {
                 await _context.SaveChangesAsync();
@@ -76,9 +78,14 @@ namespace AppRating1.Controllers
         // POST: api/RatedEntities
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<RatedEntity>> PostRatedEntity(RatedEntity ratedEntity)
+        public async Task<ActionResult<RatedEntityTable>> PostRatedEntity(RatedEntity ratedEntity)
         {
-            _context.RatedEntity.Add(ratedEntity);
+            var ratedEntity1 = new RatedEntityTable
+            {
+                Name = ratedEntity.Name,
+                ServiceTypeId = ratedEntity.ServiceTypeId,
+            };
+            _context.RatedEntity.Add(ratedEntity1);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetRatedEntity", new { id = ratedEntity.Id }, ratedEntity);
@@ -86,7 +93,7 @@ namespace AppRating1.Controllers
 
         // DELETE: api/RatedEntities/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteRatedEntity(Guid id)
+        public async Task<IActionResult> DeleteRatedEntity(int id)
         {
             var ratedEntity = await _context.RatedEntity.FindAsync(id);
             if (ratedEntity == null)
@@ -100,7 +107,7 @@ namespace AppRating1.Controllers
             return NoContent();
         }
 
-        private bool RatedEntityExists(Guid id)
+        private bool RatedEntityExists(int id)
         {
             return _context.RatedEntity.Any(e => e.Id == id);
         }
