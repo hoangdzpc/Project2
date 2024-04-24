@@ -19,5 +19,16 @@ namespace AppRating1.Data
         public DbSet<ServiceTypeTable> ServiceType { get; set; } = default!;
         public DbSet<SuggestCommentTable> SuggestComment { get; set; } = default!;
         public DbSet<UserTable> User { get; set; } = default!;
+        public DbSet<RatingViewModel> RatingViewModel { get; set; } = default;
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<RatingViewModel>( e =>
+            {
+                e.ToTable("NameView");
+                e.HasKey(e => e.RatingId);
+                
+            })
+        }
     }
 }

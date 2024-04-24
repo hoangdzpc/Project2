@@ -12,5 +12,12 @@ namespace AppRating1.Data
         public string Username { get; set; }
 
         public virtual ICollection<RatingTable> Rating { get; set; }
+        public ICollection<RatingViewModel> RatingViewModels { get; set; }
+       
+        public UserTable()
+        {
+            Rating = new List<RatingTable>();
+            RatingViewModels = new List<RatingViewModel>();
+        }
     }
 }

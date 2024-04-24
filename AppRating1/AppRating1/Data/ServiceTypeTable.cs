@@ -13,5 +13,9 @@ namespace AppRating1.Data
         public string Name { get; set; }
 
         public virtual ICollection<RatedEntityTable> RatedEntity { get; set;}
+        public ServiceTypeTable()
+        {
+            RatedEntity = new List<RatedEntityTable>();
+        }
     }
 }

@@ -88,7 +88,7 @@ namespace AppRating1.Controllers
             _context.RatedEntity.Add(ratedEntity1);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetRatedEntity", new { id = ratedEntity.Id }, ratedEntity);
+            return Ok(ratedEntity1);
         }
 
         // DELETE: api/RatedEntities/5

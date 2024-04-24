@@ -19,5 +19,13 @@ namespace AppRating1.Data
 
         public virtual ICollection<RatingTable> Ratings { get; set; }
         public virtual ICollection<SuggestCommentTable> SuggestComments { get; set; }
+        public ICollection<RatingViewModel> RatingViewModels { get; set; }
+       
+        public RatedEntityTable()
+        {
+            Ratings = new List<RatingTable>();
+            SuggestComments = new List<SuggestCommentTable>();
+            RatingViewModels = new List<RatingViewModel>();
+        }
     }
 }

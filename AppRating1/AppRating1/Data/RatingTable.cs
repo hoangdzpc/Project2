@@ -9,19 +9,23 @@ namespace AppRating1.Data
     {
         [Key]
         public int Id { get; set; }
-
+        [Range(0, 5)]
         public int RatingValue { get; set; }
+
         public int UserId { get; set; } // Khóa ngoại đến bảng User
         public int RatedEntityId { get; set; } // Khóa ngoại đến bảng RatedEntity
         [Required]
         public string Comment { get; set; }
-
-
 
         [ForeignKey("UserId")]
         public UserTable User { get; set; }
 
         [ForeignKey("RatedEntityId")]
         public RatedEntityTable RatedEntity { get; set; }
+        public ICollection<RatingViewModel> RatingViewModels { get; set; }
+        public RatingTable()
+        {
+            RatingViewModels = new List<RatingViewModel>();
+        }
     }
 }

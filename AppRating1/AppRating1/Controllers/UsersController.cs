@@ -47,12 +47,8 @@ namespace AppRating1.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUser(int id, User user)
         {
-            var user1 = _context.User.Find(id);
-            if (id != user.Id)
-            {
-                return BadRequest();
-            }
-            else
+            var user1 = _context.User.SingleOrDefault(e => e.Id == id);
+            if (user1 != null)     
             {
                 user1.Username = user.Username;
             }
@@ -87,7 +83,7 @@ namespace AppRating1.Controllers
             _context.User.Add(user1);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetUser", new { id = user.Id }, user);
+            return Ok(user1);
         }
 
         // DELETE: api/Users/5

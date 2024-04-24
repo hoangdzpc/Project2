@@ -83,7 +83,7 @@ namespace AppRating1.Controllers
             _context.Add(serviceType1);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetServiceType", new { id = serviceType.Id }, serviceType);
+            return Ok(serviceType1);
         }
 
         // DELETE: api/ServiceTypes/5

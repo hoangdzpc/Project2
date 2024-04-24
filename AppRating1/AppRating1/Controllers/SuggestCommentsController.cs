@@ -88,7 +88,7 @@ namespace AppRating1.Controllers
             _context.Add(suggestComment1);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetSuggestComment", new { id = suggestComment.Id }, suggestComment);
+            return Ok(suggestComment1);
         }
 
         // DELETE: api/SuggestComments/5
