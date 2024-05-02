@@ -23,9 +23,6 @@ namespace AppRating1.Data
         [ForeignKey("RatedEntityId")]
         public RatedEntityTable RatedEntity { get; set; }
         public ICollection<RatingViewModel> RatingViewModels { get; set; }
-        public RatingTable()
-        {
-            RatingViewModels = new List<RatingViewModel>();
-        }
+      
     }
 }

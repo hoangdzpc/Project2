@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace YourNamespace.Controllers
+namespace AppRating1.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -22,7 +22,7 @@ namespace YourNamespace.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<RatingViewModel>>> GetRatingViewModels()
         {
-            var ratings = await _context.RatingTable
+            var ratings = await _context.Rating
                 .Include(r => r.User)
                 .Include(r => r.RatedEntity)
                 .Select(r => new RatingViewModel
@@ -42,7 +42,7 @@ namespace YourNamespace.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<RatingViewModel>> GetRatingViewModel(int id)
         {
-            var rating = await _context.RatingTable
+            var rating = await _context.Rating
                 .Include(r => r.User)
                 .Include(r => r.RatedEntity)
                 .Select(r => new RatingViewModel
@@ -72,7 +72,7 @@ namespace YourNamespace.Controllers
                 return BadRequest();
             }
 
-            var rating = await _context.RatingTable.FindAsync(id);
+            var rating = await _context.Rating.FindAsync(id);
             if (rating == null)
             {
                 return NotFound();
@@ -111,7 +111,7 @@ namespace YourNamespace.Controllers
                 // Lưu ý: Bạn cần cập nhật khóa ngoại UserId và RatedEntityId ở đây
             };
 
-            _context.RatingTable.Add(rating);
+            _context.Rating.Add(rating);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetRatingViewModel), new { id = rating.Id }, ratingViewModel);
@@ -121,13 +121,13 @@ namespace YourNamespace.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteRatingViewModel(int id)
         {
-            var rating = await _context.RatingTable.FindAsync(id);
+            var rating = await _context.Rating.FindAsync(id);
             if (rating == null)
             {
                 return NotFound();
             }
 
-            _context.RatingTable.Remove(rating);
+            _context.Rating.Remove(rating);
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -135,7 +135,7 @@ namespace YourNamespace.Controllers
 
         private bool RatingViewModelExists(int id)
         {
-            return _context.RatingTable.Any(e => e.Id == id);
+            return _context.Rating.Any(e => e.Id == id);
         }
     }
 }

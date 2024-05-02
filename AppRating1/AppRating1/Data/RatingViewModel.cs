@@ -8,6 +8,7 @@
         public int RatingValue { get; set; }
         public string Comment { get; set; }
 
+        //relationship
         public RatingTable RatingTable { get; set; }
         public RatedEntityTable RatedEntityTable { get; set; }
         public UserTable UserTable { get; set; }

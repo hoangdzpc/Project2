@@ -74,6 +74,49 @@ namespace AppRating1.Migrations
                     b.ToTable("Rating");
                 });
 
+            modelBuilder.Entity("AppRating1.Data.RatingViewModel", b =>
+                {
+                    b.Property<int>("RatingId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RatingId"));
+
+                    b.Property<string>("Comment")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RatedEntityName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("RatedEntityTableId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RatingTableId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RatingValue")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserTableId")
+                        .HasColumnType("int");
+
+                    b.HasKey("RatingId");
+
+                    b.HasIndex("RatedEntityTableId");
+
+                    b.HasIndex("RatingTableId");
+
+                    b.HasIndex("UserTableId");
+
+                    b.ToTable("NameView", (string)null);
+                });
+
             modelBuilder.Entity("AppRating1.Data.ServiceTypeTable", b =>
                 {
                     b.Property<int>("Id")
@@ -161,6 +204,33 @@ namespace AppRating1.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("AppRating1.Data.RatingViewModel", b =>
+                {
+                    b.HasOne("AppRating1.Data.RatedEntityTable", "RatedEntityTable")
+                        .WithMany("RatingViewModels")
+                        .HasForeignKey("RatedEntityTableId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("AppRating1.Data.RatingTable", "RatingTable")
+                        .WithMany("RatingViewModels")
+                        .HasForeignKey("RatingTableId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("AppRating1.Data.UserTable", "UserTable")
+                        .WithMany("RatingViewModels")
+                        .HasForeignKey("UserTableId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("RatedEntityTable");
+
+                    b.Navigation("RatingTable");
+
+                    b.Navigation("UserTable");
+                });
+
             modelBuilder.Entity("AppRating1.Data.SuggestCommentTable", b =>
                 {
                     b.HasOne("AppRating1.Data.RatedEntityTable", "RatedEntity")
@@ -174,9 +244,16 @@ namespace AppRating1.Migrations
 
             modelBuilder.Entity("AppRating1.Data.RatedEntityTable", b =>
                 {
+                    b.Navigation("RatingViewModels");
+
                     b.Navigation("Ratings");
 
                     b.Navigation("SuggestComments");
+                });
+
+            modelBuilder.Entity("AppRating1.Data.RatingTable", b =>
+                {
+                    b.Navigation("RatingViewModels");
                 });
 
             modelBuilder.Entity("AppRating1.Data.ServiceTypeTable", b =>
@@ -187,6 +264,8 @@ namespace AppRating1.Migrations
             modelBuilder.Entity("AppRating1.Data.UserTable", b =>
                 {
                     b.Navigation("Rating");
+
+                    b.Navigation("RatingViewModels");
                 });
 #pragma warning restore 612, 618
         }
